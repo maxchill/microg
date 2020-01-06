@@ -87,24 +87,3 @@ index 9ed2b9c..935fbea 100644
      @Override
      public void checkPackageStartable(String packageName, int userId) {
          final int callingUid = Binder.getCallingUid();
-         
-diff --git a/device/sample/etc/apns-full-conf.xml b/device/sample/etc/apns-full-conf.xml
-index bb08dc5..e2d0009 100644
---- a/device/sample/etc/apns-full-conf.xml
-+++ b/device/sample/etc/apns-full-conf.xml
-@@ -21,6 +21,15 @@
- <!-- This version must agree with that in apps/common/res/apns.xml -->
- <apns version="8">
-
-+  <apn carrier="TRACFONE.VZWENTP"
-+      mcc="311"
-+      mnc="480"
-+      apn="TRACFONE.VZWENTP"
-+      type="default,dun,supl"
-+      protocol="IPV4V6"
-+      roaming_protocol="IPV4V6"
-+  />
-+
-   <apn carrier="AT&amp;T PHONE TEST SIM"
-       carrier_id = "1911"
-       mcc="001"
